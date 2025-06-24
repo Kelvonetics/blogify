@@ -40,7 +40,7 @@ const ResetPassword = () => {
             if(res.success){
                 toast.success(res.message);
                 setIsLoading(false);
-                await new Promise((resolve) => setTimeout(resolve, 3000));
+                
                 return navigate(`/login`);
             }
             else{

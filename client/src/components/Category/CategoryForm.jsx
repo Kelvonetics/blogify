@@ -26,7 +26,7 @@ const CategoryForm = ({ mutate, user }) => {
             if(res.success){
                 toast.success(res.message);
                 mutate();
-                await new Promise((resolve) => setTimeout(resolve, 3000));
+                
                 actions.resetForm();
                 return navigate(`/categories`);
             }

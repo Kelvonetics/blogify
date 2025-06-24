@@ -61,7 +61,7 @@ const EmailVerificationPage = () => {
             const res = await response.json();
             if(res.success){
                 toast.success(res.message);
-                await new Promise((resolve) => setTimeout(resolve, 3000));
+                
                 return navigate(`/login`);
             }
             else{

@@ -30,7 +30,7 @@ const ForgotPassword = () => {
 		const res = await response.json();
 		if(res.success){
 			toast.success(res.message);
-			await new Promise((resolve) => setTimeout(resolve, 3000));
+			
 			return navigate(`/reset-password/${res.code}`);
 		}
 		else{

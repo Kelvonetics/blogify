@@ -32,7 +32,7 @@ const Register = () => {
             const res = await response.json();
             if(res.success){
                 toast.success(res.message);
-                await new Promise((resolve) => setTimeout(resolve, 3000));
+                
                 actions.resetForm();
                 return navigate(`/verify-email`);
             }
