@@ -95,7 +95,7 @@ const EditPostForm = () => {
     body: post?.data?.body,
     categories: post?.data?.categories?._id,
     photo: post?.data?.photo,
-    author: post?.data?.author
+    author: user?._id
 }
 
 
