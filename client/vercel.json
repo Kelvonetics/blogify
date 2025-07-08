@@ -1,22 +1,6 @@
-{
-    "routes": [
-    
-            { "src": "/", "dest": "/" },
-            { "src": "/login", "dest": "/" },
-            { "src": "/register", "dest": "/" },
-            { "src": "/blog", "dest": "/" },
-            { "src": "/blog/:slug/:post_id", "dest": "/" },
-            { "src": "/post/create", "dest": "/" },
-            { "src": "/post/edit/:slug", "dest": "/" },
-            { "src": "/likes", "dest": "/" },
-            { "src": "/categories", "dest": "/" },
-            { "src": "/categories/edit/:category_id", "dest": "/" },
-            { "src": "/category-posts/:category_id", "dest": "/" },
-            { "src": "/verify-email", "dest": "/" },
-            { "src": "/forget-password", "dest": "/" },
-            { "src": "/reset-password/:token", "dest": "/" },
-            { "src": "/users", "dest": "/" },
-            { "src": "/profile/:user_id", "dest": "/" }
 
-    ]
+{
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
+  ]
 }
